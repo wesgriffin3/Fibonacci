@@ -4,4 +4,4 @@ def fib(n)
   fib(n-1) + fib(n-2)
 end
 
-  (1..10).each { |n| puts fib(n) }
+  (1..9).each { |n| puts fib(n) }
