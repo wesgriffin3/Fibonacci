@@ -8,6 +8,4 @@ def fib(n)
   end
 end
 
-puts fib(8)
-
-# if n <= 2, it returns n
+puts fib(2)
