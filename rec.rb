@@ -1,7 +1,8 @@
 def fib(n)
-  return n if n < 2
-
-  fib(n-1) + fib(n-2)
+  if n < 2 
+    return n
+  else
+    fib(n-1) + fib(n-2)
+  end
 end
-
-  (1..9).each { |n| puts fib(n) }
+puts fib(35)

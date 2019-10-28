@@ -1,11 +1,15 @@
 def fib(n)
-  if n == 0
-    return 0
-  elsif n == 1
-    return 1
-  else
-    return (fib(n - 1) + fib(n - 2))
+  arr = [0, 1]
+
+  while arr.length <= n
+    last = arr.length - 1 #4
+    second_last = arr.length - 2 #3
+    new_item = arr[last] + arr[second_last] #5
+    arr.push(new_item)
   end
+
+  arr.last
+
 end
 
-puts fib(2)
+puts fib(35)
